@@ -8,7 +8,6 @@ import Header from './components/Header'
 import SelectedFlower from './components/SelectedFlower'
 import Vase from './components/Vase'
 
-
 class App extends Component {
 
   componentDidMount(){

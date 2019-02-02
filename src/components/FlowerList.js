@@ -1,11 +1,21 @@
 import React from 'react'
+import FlowerItem from './FlowerItem'
 import './../styles/FlowerList.css'
+import { connect } from 'react-redux'
 
 
-const FlowerList = () => {
+const FlowerList = ({ flowers }) => {
+  const flowerMap = flowers.map(flower => <FlowerItem flower={flower} />)
+
   return (
-    <div className="flower-list">hi from flower list</div>
+    <div className="flower-list">{flowerMap}</div>
   )
 }
 
-export default FlowerList
+const mapStateToProps = state => {
+  return {
+    flowers: state.flowers
+  }
+}
+
+export default connect(mapStateToProps)(FlowerList)

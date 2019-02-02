@@ -4,7 +4,9 @@ import vaseReducer from './vaseReducer'
 
 const rootReducer = combineReducers({
   flowers: flowerReducer,
-  vase: vaseReducer
+  vase: vaseReducer,
+  // selectedFlower: ,
+  //
 })
 
 
