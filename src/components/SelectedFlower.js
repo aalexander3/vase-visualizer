@@ -1,8 +1,9 @@
 import React from 'react'
+import './../styles/SelectedFlower.css'
 
 const SelectedFlower = () => {
   return (
-    <div>hi from selected flower</div>
+    <div className="selected-flower">hi from selected flower</div>
   )
 }
 

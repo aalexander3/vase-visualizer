@@ -3,6 +3,10 @@ import './styles/App.css';
 import FlowerAdapter from './adapters/FlowerAdapter'
 import { connect } from 'react-redux'
 import { addFlowersToList } from './actions/FlowerActions'
+import FlowerList from './components/FlowerList'
+import Header from './components/Header'
+import SelectedFlower from './components/SelectedFlower'
+import Vase from './components/Vase'
 
 
 class App extends Component {
@@ -15,7 +19,10 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1>vase visualizer baby</h1>
+        <Header />
+        <FlowerList />
+        <SelectedFlower />
+        <Vase />
       </div>
     )
   }

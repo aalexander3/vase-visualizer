@@ -1,8 +1,10 @@
 import React from 'react'
+import './../styles/FlowerList.css'
+
 
 const FlowerList = () => {
   return (
-    <div>hi from flower list</div>
+    <div className="flower-list">hi from flower list</div>
   )
 }
 
