@@ -1,5 +1,11 @@
 .flower-list {
   grid-row: 2;
   grid-column: 1;
-  background: orange;
+  display: flex;
+  flex-direction: column;
+  padding-left: 5vw;
+}
+
+.flower-item {
+  cursor: pointer;
 }

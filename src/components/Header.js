@@ -4,7 +4,7 @@ import './../styles/Header.css'
 
 const Header = () => {
   return (
-    <div className="header">Hello from header</div>
+    <div className="header"><h1>Vase Visualizer</h1></div>
   )
 }
 

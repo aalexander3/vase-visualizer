@@ -1,8 +1,8 @@
-import { ADD_FLOWERS } from '../actions/actionTypes'
+import { GET_FLOWERS } from '../actions/actionTypes'
 
 const flowerReducer = (state = [], action) => {
   switch (action.type) {
-    case ADD_FLOWERS:
+    case GET_FLOWERS:
       return action.payload
     default: return state
   }

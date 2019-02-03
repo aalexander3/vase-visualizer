@@ -1,14 +1,12 @@
 import React from 'react'
+import { connect } from 'react-redux'
+import { selectFlower } from '../actions/FlowerActions'
 
-// clicking on a flower item sets it as the previewed (selected flower)
-// TODO:
-// sync the click event to an action
-// dispatch the action to the right reducer
 
-const FlowerItem = ({ flower }) => {
+const FlowerItem = ({ flower, selectFlower }) => {
   return (
-    <div>{flower.name}</div>
+    <h3 className="flower-item" onClick={() => selectFlower(flower)}>{flower.name}</h3>
   )
 }
 
-export default FlowerItem
+export default connect(null, { selectFlower })(FlowerItem)

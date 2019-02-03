@@ -1,10 +1,21 @@
+@import url('https://fonts.googleapis.com/css?family=Bitter');
+@import url('https://fonts.googleapis.com/css?family=Lato');
+
 body {
   font-family: sans-serif;
   margin: 0;
 }
 
+h1, h2, h3 {
+  font-family: "Bitter", arial, sans-serif;
+}
+
+h4, h5, p {
+  font-family: "Lato", arial, sans-serif;
+}
+
 .App {
   display: grid;
-  grid-template-columns: 30vw 40vw 30vw;
+  grid-template-columns: 25vw 50vw 25vw;
   grid-template-rows: 10vh 90vh;
 }

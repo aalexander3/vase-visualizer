@@ -5,7 +5,7 @@ import { connect } from 'react-redux'
 
 
 const FlowerList = ({ flowers }) => {
-  const flowerMap = flowers.map(flower => <FlowerItem flower={flower} />)
+  const flowerMap = flowers.map(flower => <FlowerItem key={ flower._id } flower={flower} />)
 
   return (
     <div className="flower-list">{flowerMap}</div>
