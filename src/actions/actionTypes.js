@@ -1,2 +1,4 @@
 export const GET_FLOWERS = "GET_FLOWERS"
 export const SELECT_FLOWER = "SELECT_FLOWER"
+export const ADD_FLOWER = "ADD_FLOWER"
+export const REMOVE_FLOWER = "REMOVE_FLOWER"
