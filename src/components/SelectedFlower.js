@@ -1,6 +1,7 @@
 import React, { Fragment } from 'react'
 import { connect } from 'react-redux'
 import FlowerButtons from './FlowerButtons'
+import PriceCalculator from './PriceCalculator'
 import './../styles/SelectedFlower.css'
 
 const SelectedFlower = ({ selectedFlower }) => {
@@ -13,6 +14,7 @@ const SelectedFlower = ({ selectedFlower }) => {
         <p>{selectedFlower.qualities}</p>
         <p>{selectedFlower.price}</p>
         <FlowerButtons />
+        <PriceCalculator />
       </Fragment>
     )
   }

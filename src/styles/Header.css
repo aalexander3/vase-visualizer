@@ -2,4 +2,8 @@
   grid-row: 1;
   grid-column: 1/4;
   text-align: center;
+  border-bottom: 1px solid #1C0F13;
+  z-index: 10;
+  box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.2),
+              0 2px 1px 0 rgba(0, 0, 0, 0.15);
 }

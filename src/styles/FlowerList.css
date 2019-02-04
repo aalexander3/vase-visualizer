@@ -8,4 +8,13 @@
 
 .flower-item {
   cursor: pointer;
+  color: #4A5459;
+}
+
+.flower-item:hover {
+  color: black;
+}
+
+.flower-item:active {
+  transform: translateY(1.4px);
 }
