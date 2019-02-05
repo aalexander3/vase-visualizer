@@ -1,13 +1,34 @@
 import React from 'react'
+import Flower from './Flower'
+import { connect } from 'react-redux'
 import './../styles/Vase.css'
 
 
-const Vase = () => {
+const Vase = ({ vase }) => {
+
+  const newFlower = () => {
+    let flowers = vase.flowers
+    let flowerArr = []
+    for (let flower in flowers) {
+      let { count } = flowers[flower]
+        for(let i=0; i < count; i++){
+          flowerArr.push(<Flower key={`${flower}-${i}`} name={flower} />)
+        }
+    }
+    return flowerArr
+  }
+
   return (
-    <div className="vase-section">
-      <img className="vase-image" src="https://images.unsplash.com/photo-1526198049595-f32cde2a219d?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1610&q=80" alt="vase"/>
+    <div className="vase-section" >
+      { newFlower() }
     </div>
   )
 }
 
-export default Vase
+const mapStateToProps = state => {
+  return {
+    vase: state.vase
+  }
+}
+
+export default connect(mapStateToProps)(Vase)

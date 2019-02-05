@@ -7,8 +7,24 @@
   flex-direction: column;
 }
 
-.vase-image {
+/* .vase-image {
   width: 35vw;
   height: 35vw;
   border-radius: 50%;
+} */
+
+
+.draggable-flower {
+  position: absolute;
+  cursor: grab;
 }
+
+.draggable-flower.shift {
+  border: 1px solid black;
+  cursor: crosshair;
+}
+
+ .draggable-flower.ctrl {
+   border: 1px solid red;
+   cursor: nwse-resize;
+ }
